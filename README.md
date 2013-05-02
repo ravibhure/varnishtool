@@ -6,6 +6,7 @@ This is a tool to admin varnish 3, with dashboard, statistics, vcl editor, ban u
 Install instructions
 --------------------
 * You need a local Varnish server
+* You need [Python 2.7+](https://gist.github.com/ravibhure/5501298).
 * Also you need a minimal build developement tools like gcc
 
 Python venv
@@ -18,6 +19,13 @@ Is better to work with virtualenv and use the use of virtualenvwrapper is easy
 # workon djvaradm
 # (djvaradm)# pip install -r requirements.txt
 # (djvaradm)# ./manage.py syncdb
+```
+
+For CentOS 5.x and 6.x 
+
+```bash
+# pip install -r requirements.txt
+# ./manage.py syncdb
 ```
 
 Run APP with Gunicorn
