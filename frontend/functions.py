@@ -59,8 +59,8 @@ class varnishStats():
 
     def memory_st(self):
         self.mem_stats = {
-        "MBytes_available": (int(self.stats_dict['SMA.s0.g_space'])/1024/1024),
-        "MBytes_allocated": (int(self.stats_dict['SMA.s0.c_bytes'])/1024/1024)
+        "MBytes_available": (int(self.stats_dict['SMA.Transient.g_space'])/1024/1024),
+        "MBytes_allocated": (int(self.stats_dict['SMA.Transient.c_bytes'])/1024/1024)
         }
         return self.mem_stats
 
